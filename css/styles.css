@@ -2,14 +2,21 @@ html {
   font-size: 100%;
 }
 body {
-  background-color: #be5a5a; /* Cambia este valor por el color que desees */
   font-size: 18px;
   font-family: "Open sans", Helvetica, Arial, sans-serif;
   color: #666666;
   padding: 0;
+  background-color: #eeeeee;
 }
 .topspace {
   margin-top: 40px;
+}
+
+.panel-body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
 }
 /*********************************************************************
 
@@ -226,9 +233,8 @@ a:hover {
 
 **********************************************************************/
 #head {
-  background: #a73838 url(../images/image.jpg) top center;
+  background:url(../images/image.jpg) top center;
   background-size: cover;
-  color: #bf7575;
   padding: 30px 0 35px 0;
   height: 100vh;
 }
@@ -331,6 +337,7 @@ img {
   border: 0 none;
   padding: 12px 35px;
   text-shadow: 0 1px 0px #780d33;
+  justify-items: center;
 }
 .btn-primary {
   color: #fff;
