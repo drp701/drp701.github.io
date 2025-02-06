@@ -18,6 +18,24 @@ body {
     align-items: flex-end;
     height: 100%;
 }
+
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #003159;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.tech-badge svg {
+  width: 16px;
+  height: 16px;
+}
 /*********************************************************************
 
 
@@ -236,7 +254,6 @@ a:hover {
   background:url(../images/image.jpg) top center;
   background-size: cover;
   padding: 30px 0 35px 0;
-  height: 100vh;
 }
 #head img.img-circle {
   display: block;
@@ -279,6 +296,8 @@ a:hover {
   font-size: 18px;
   margin: 15px 0 0;
 }
+
+
 /*********************************************************************
 
 
@@ -341,7 +360,7 @@ img {
 }
 .btn-primary {
   color: #fff;
-  background-color: #bd1550;
+  background-color: #003159;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -545,8 +564,8 @@ img {
   height: 4px;
   top: .53em;
   width: 600%;
-  border-bottom: 2px solid #ccc;
-  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #003159;
+  border-top: 2px solid #003159;
 }
 .section-title span:before,
 .entry-title span:before {
@@ -768,44 +787,43 @@ footer.entry-meta .meta-in {
 **********************************************************************/
 #footer {
   background: #232323;
-  padding: 30px 0 0 0;
-  font-size: 15px;
+  padding: 50px 0;
   color: #999;
+  font-size: 18px;
+  
 }
+
 #footer a {
   color: #ccc;
+  transition: color 0.3s;
 }
+
 #footer a:hover {
   color: #fff;
 }
-#footer h3.widget-title {
-  font-size: 15px;
+
+#footer .widget-title {
+  font-size: 20px;
   text-transform: uppercase;
-  color: #ccc;
-  margin: 0 0 20px;
-}
-#underfooter {
-  background: #191919;
-  padding: 15px 0;
-  color: #777;
-  font-size: 12px;
-}
-#underfooter a {
-  color: #aaa;
-}
-#underfooter a:hover {
   color: #fff;
 }
-#underfooter p {
+
+#footer .widget-body p {
   margin: 0;
 }
-.follow-me-icons {
-  font-size: 30px;
+
+#footer .follow-me-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 24px;
+  color: #ccc;
+  transition: color 0.3s;
 }
-.follow-me-icons i {
-  float: left;
-  margin: 0 10px 0 0;
+
+#footer .follow-me-icons a:hover {
+  color: #fff;
 }
+
 /* Max page width
 /////////////////////////////////////////////////////////////////////*/
 @media (min-width: 1200px) {
